@@ -27,7 +27,7 @@
         <section class="mx-auto px-4 lg:px-24 py-4 lg:py-12">
             <div class="lg:flex justify-between">
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full lg:w-3/4">
-                    <div class="border shadow text-center rounded-lg py-6">
+                    <div id="card-triangle" class="border shadow text-center rounded-lg py-6">
                         <div class="mx-auto w-44">
                             <img src="images/triangle.png" alt="triangle-shape-image">
                         </div>
@@ -41,21 +41,25 @@
                             <div>
                                 <p class="inline text-md me-2">b = <span id="triangle-base-element">0 </span>cm</p>
                                 <p class="inline text-md">h = <span id="triangle-height-element">0 </span>cm</p>
-                                <button><img class="inline ms-2" src="images/edit-icon.svg" alt=""></button>
+                                <button id="btn-triangle-edit"><img class="inline ms-2" src="images/edit-icon.svg" alt=""></button>
                             </div>
-                            <div class="flex justify-center mt-4 hidden">
-                                <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="triangle-base-field" placeholder="b"><span>cm</span>
-                                <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="triangle-height-field" placeholder="h"> <span>cm</span>
-                                <input class="size-6 ms-2" type="checkbox" name="checkbox" id="" checked>
+                            <div id="triangle-input-field-section" class="mt-4 hidden">
+                                <div class="flex justify-center items-center">
+                                    <input id="triangle-base-field" class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" placeholder="b"><span>cm</span>
+                                    <input id="triangle-height-field" class="bg-gray-200 w-16 ms-2 me-1 px-1" type="text" name="text" placeholder="h"> <span>cm</span>
+                                    <button id="btn-triangle-checkbox" class="ms-2">
+                                        <img src="images/checkbox.png" alt="checkbox-image">
+                                    </button>
+                                </div>
                             </div>
                             <div>
-                                <button class="w-52 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded font-bold mx-auto mt-4">Calculate</button>
+                                <button id="btn-triangle-calculate" class="w-52 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded font-bold mx-auto mt-4">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <div class="border shadow text-center rounded-lg py-6">
                         <div class="mx-auto w-56">
-                            <img src="images/rectangle.png" alt="triangle-shape-image">
+                            <img src="images/rectangle.png" alt="rectangle-shape-image">
                         </div>
                         <div>
                             <div>
@@ -65,14 +69,18 @@
                                 <p class="text-md text-gray-600 my-1">Area (A) = w x l</p>
                             </div>
                             <div>
-                                <p class="inline text-md me-2">w = <span id="triangle-base-element">0 </span>cm</p>
-                                <p class="inline text-md">l = <span id="triangle-height-element">0 </span>cm</p>
+                                <p class="inline text-md me-2">w = <span id="rectangle-width-element">0 </span>cm</p>
+                                <p class="inline text-md">l = <span id="rectangle-length-element">0 </span>cm</p>
                                 <button><img class="inline ms-2" src="images/edit-icon.svg" alt=""></button>
                             </div>
-                            <div class="flex justify-center mt-4 hidden">
-                                <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="triangle-base-field" placeholder="w"><span>cm</span>
-                                <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="triangle-height-field" placeholder="l"> <span>cm</span>
-                                <input class="size-6 ms-2" type="checkbox" name="checkbox" id="" checked>
+                            <div id="rectangle-input-field-section" class="mt-4 hidden">
+                                <div class="flex justify-center items-center">
+                                    <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="rectangle-width-field" placeholder="w"><span>cm</span>
+                                    <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="rectangle-length-field" placeholder="l"> <span>cm</span>
+                                    <button id="btn-rectangle-checkbox" class="ms-2">
+                                        <img src="images/checkbox.png" alt="checkbox-image">
+                                    </button>
+                                </div>
                             </div>
                             <div>
                                 <button class="w-52 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded font-bold mx-auto mt-4">Calculate</button>
@@ -81,7 +89,7 @@
                     </div>
                     <div class="border shadow text-center rounded-lg py-6">
                         <div class="mx-auto w-64">
-                            <img src="images/parallelogram.png" alt="triangle-shape-image">
+                            <img src="images/parallelogram.png" alt="parallelogram-shape-image">
                         </div>
                         <div>
                             <div>
@@ -91,14 +99,18 @@
                                 <p class="text-md text-gray-600 my-1">Area (A) = b x h</p>
                             </div>
                             <div>
-                                <p class="inline text-md me-2">b = <span id="triangle-base-element">0 </span>cm</p>
-                                <p class="inline text-md">h = <span id="triangle-height-element">0 </span>cm</p>
+                                <p class="inline text-md me-2">b = <span id="parallelogram-base-element">0 </span>cm</p>
+                                <p class="inline text-md">h = <span id="parallelogram-height-element">0 </span>cm</p>
                                 <button><img class="inline ms-2" src="images/edit-icon.svg" alt=""></button>
                             </div>
-                            <div class="flex justify-center mt-4 hidden">
-                                <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="triangle-base-field" placeholder="b"><span>cm</span>
-                                <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="triangle-height-field" placeholder="h"> <span>cm</span>
-                                <input class="size-6 ms-2" type="checkbox" name="checkbox" id="" checked>
+                            <div id="parallelogram-input-field-section" class="mt-4 hidden">
+                                <div class="flex justify-center items-center">
+                                    <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="parallelogram-base-field" placeholder="b"><span>cm</span>
+                                    <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="parallelogram-height-field" placeholder="h"> <span>cm</span>
+                                    <button id="btn-parallelogram-checkbox" class="ms-2">
+                                        <img src="images/checkbox.png" alt="checkbox-image">
+                                    </button>
+                                </div>
                             </div>
                             <div>
                                 <button class="w-52 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded font-bold mx-auto mt-4">Calculate</button>
@@ -107,7 +119,7 @@
                     </div>
                     <div class="border shadow text-center rounded-lg py-6">
                         <div class="mx-auto w-52">
-                            <img src="images/rhombus.png" alt="triangle-shape-image">
+                            <img src="images/rhombus.png" alt="rhombus-shape-image">
                         </div>
                         <div>
                             <div>
@@ -117,14 +129,18 @@
                                 <p class="text-md text-gray-600 my-1">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                             </div>
                             <div>
-                                <p class="inline text-md me-2">d<sub>1</sub> = <span id="triangle-base-element">0 </span>cm</p>
-                                <p class="inline text-md">d<sub>2</sub> = <span id="triangle-height-element">0 </span>cm</p>
+                                <p class="inline text-md me-2">d<sub>1</sub> = <span id="rhombus-diagonal1-length-element">0 </span>cm</p>
+                                <p class="inline text-md">d<sub>2</sub> = <span id="rhombus-diagonal2-length-element">0 </span>cm</p>
                                 <button><img class="inline ms-2" src="images/edit-icon.svg" alt=""></button>
                             </div>
-                            <div class="flex justify-center mt-4 hidden">
-                                <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="triangle-base-field" placeholder="d1"><span>cm</span>
-                                <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="triangle-height-field" placeholder="d2"> <span>cm</span>
-                                <input class="size-6 ms-2" type="checkbox" name="checkbox" id="" checked>
+                            <div id="rhombus-input-field-section" class="mt-4 hidden">
+                                <div class="flex justify-center items-center">
+                                    <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="rhombus-diagonal2-length-field" placeholder="d1"><span>cm</span>
+                                    <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="rhombus-diagonal1-length-field" placeholder="d2"> <span>cm</span>
+                                    <button id="btn-rhombus-checkbox" class="ms-2">
+                                        <img src="images/checkbox.png" alt="checkbox-image">
+                                    </button>
+                                </div>
                             </div>
                             <div>
                                 <button class="w-52 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded font-bold mx-auto mt-4">Calculate</button>
@@ -133,24 +149,28 @@
                     </div>
                     <div class="border shadow text-center rounded-lg py-6">
                         <div class="mx-auto w-40">
-                            <img src="images/pentagon.png" alt="triangle-shape-image">
+                            <img src="images/pentagon.png" alt="pentagon-shape-image">
                         </div>
                         <div>
                             <div>
                                 <h3 class="text-xl font-semibold text-gray-700 mt-2">Pentagon</h3>
                             </div>
                             <div>
-                                <p class="text-md text-gray-600 my-1">Area (A) = 0.5 x p x b</p>
+                                <p class="text-md text-gray-600 my-1">Area (A) = 0.5 x p x a</p>
                             </div>
                             <div>
-                                <p class="inline text-md me-2">p = <span id="triangle-base-element">0 </span>cm</p>
-                                <p class="inline text-md">b = <span id="triangle-height-element">0 </span>cm</p>
+                                <p class="inline text-md me-2">p = <span id="pentagon-perameter-element">0 </span>cm</p>
+                                <p class="inline text-md">b = <span id="pentagon-apothem-element">0 </span>cm</p>
                                 <button><img class="inline ms-2" src="images/edit-icon.svg" alt=""></button>
                             </div>
-                            <div class="flex justify-center mt-4 hidden">
-                                <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="triangle-base-field" placeholder="p"><span>cm</span>
-                                <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="triangle-height-field" placeholder="b"> <span>cm</span>
-                                <input class="size-6 ms-2" type="checkbox" name="checkbox" id="" checked>
+                            <div id="pentagon-input-field-section" class="mt-4 hidden">
+                                <div class="flex justify-center items-center">
+                                    <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="pentagon-perameter-field" placeholder="p"><span>cm</span>
+                                    <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="pentagon-apothem-field" placeholder="a"> <span>cm</span>
+                                    <button id="btn-pentagon-checkbox" class="ms-2">
+                                        <img src="images/checkbox.png" alt="checkbox-image">
+                                    </button>
+                                </div>
                             </div>
                             <div>
                                 <button class="w-52 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded font-bold mx-auto mt-4">Calculate</button>
@@ -159,7 +179,7 @@
                     </div>
                     <div class="border shadow text-center rounded-lg py-6">
                         <div class="mx-auto w-60">
-                            <img src="images/ellipse.png" alt="triangle-shape-image">
+                            <img src="images/ellipse.png" alt="ellipse-shape-image">
                         </div>
                         <div>
                             <div>
@@ -169,14 +189,18 @@
                                 <p class="text-md text-gray-600 my-1">Area (A) = 0.5 x &pi; x ab</p>
                             </div>
                             <div>
-                                <p class="inline text-md me-2">a = <span id="triangle-base-element">0 </span>cm</p>
-                                <p class="inline text-md">b = <span id="triangle-height-element">0 </span>cm</p>
+                                <p class="inline text-md me-2">a = <span id="ellipse-major-length-element">0 </span>cm</p>
+                                <p class="inline text-md">b = <span id="ellipse-minor-length-element">0 </span>cm</p>
                                 <button><img class="inline ms-2" src="images/edit-icon.svg" alt=""></button>
                             </div>
-                            <div class="flex justify-center mt-4 hidden">
-                                <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="triangle-base-field" placeholder="a"><span>cm</span>
-                                <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="triangle-height-field" placeholder="b"> <span>cm</span>
-                                <input class="size-6 ms-2" type="checkbox" name="checkbox" id="" checked>
+                            <div id="ellipse-input-section" class="mt-4 hidden">
+                                <div class="flex justify-center items-center">
+                                    <input class="bg-gray-200 w-16 me-1 px-1" type="text" name="text" id="ellipse-major-length-field" placeholder="a"><span>cm</span>
+                                    <input class="bg-gray-200 w-16 ms-4 me-1 px-1" type="text" name="text" id="ellipse-minor-length-field" placeholder="b"> <span>cm</span>
+                                    <button id="btn-ellipse-checkbox" class="ms-2">
+                                        <img src="images/checkbox.png" alt="checkbox-image">
+                                    </button>
+                                </div>
                             </div>
                             <div>
                                 <button class="w-52 bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded font-bold mx-auto mt-4">Calculate</button>
@@ -185,8 +209,14 @@
                     </div>
                     
                 </div>
-                <div class="lg:w-1/4 border text-center rounded-lg lg:ms-4 h-72 p-4 mt-4 lg:mt-0">
-                    <h3 class="underline text-xl font-semibold">Area Calculation</h3>
+                <!-- Area Calculation section -->
+                <div class="lg:w-1/4 border rounded-lg lg:ms-4 h-80 p-4 mt-4 lg:mt-0">
+                    <h3 class="underline text-center text-xl font-semibold">Area Calculation</h3>
+                    <div class="mx-2 my-4">
+                        <ol id="area-calculation-section" class="list-decimal">
+                            
+                        </ol>
+                    </div>
                 </div>
             </div>
         </section>
@@ -195,5 +225,6 @@
 
     <!-- Javascript -->
     <script src="JS/utilities.js"></script>
+    <script src="JS/apps.js"></script>
 </body>
 </html>
