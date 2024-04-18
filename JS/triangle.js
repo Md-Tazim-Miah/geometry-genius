@@ -1,3 +1,4 @@
+/*_____________________Triangle Card Functionalities__________________*/
 // Triangle edit button
 document.getElementById('btn-triangle-edit').addEventListener('click', function(){
     show('triangle-input-field-section');
@@ -20,14 +21,14 @@ document.getElementById('btn-triangle-checkbox').addEventListener('click', funct
 
     // Height
     document.getElementById('triangle-height-field').addEventListener('keyup', function(event){
-        const baseInputValue = event.target.value;
-        setInnerTextById('triangle-height-element', baseInputValue + ' ');
-        if(baseInputValue === ''){
+        const heightInputValue = event.target.value;
+        setInnerTextById('triangle-height-element', heightInputValue + ' ');
+        if(heightInputValue === ''){
             setInnerTextById('triangle-height-element', '0 ');
         }
     })
 
-// Traiangle calculate button
+// Triangle calculate button
 document.getElementById('btn-triangle-calculate').addEventListener('click', function(){
     const base = getInputValueById('triangle-base-field');
     const height = getInputValueById('triangle-height-field');
@@ -59,10 +60,8 @@ document.getElementById('area-calculation-section').addEventListener('click', fu
 });
 
 // This event listener will change the triangle shape background color randomly.
-
-const card = document.getElementById('card-triangle');
-
-card.addEventListener('mouseenter', () => {
+const triangleCard = document.getElementById('card-triangle');
+triangleCard.addEventListener('mouseenter', () => {
   const randomColor = getRandomColor();
-  card.style.backgroundColor = randomColor;
+  triangleCard.style.backgroundColor = randomColor;
 });
