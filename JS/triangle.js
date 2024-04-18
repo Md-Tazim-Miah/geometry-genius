@@ -37,25 +37,26 @@ document.getElementById('btn-triangle-calculate').addEventListener('click', func
         <li>
             <div class="flex mt-3">
                 <p>Triangle</p>
-                <p class="ms-2"><span class="shape-area-element">0</span>cm<sup>2</sup></p>
-                <button class="btn-convert-area bg-blue-500 hover:bg-blue-700 text-white rounded px-1 py-0.5 ms-3">Convert to m<sup>2</sup></button>
+                <p class="ms-2"><span class="triangle-shape-area-element">0</span><span class="triangle-shape-area-unit">cm</span><sup>2</sup></p>
+                <button class="btn-convert-triangle-area bg-blue-500 hover:bg-blue-700 text-white rounded px-1 py-0.5 ms-3">Convert to m<sup>2</sup></button>
             </div>
         </li>
     `);
 
     const areaCalculationSection = document.getElementById('area-calculation-section');
     areaCalculationSection.appendChild(newElement);
-    const shapeAreaElement = newElement.querySelector('.shape-area-element');
+    const shapeAreaElement = newElement.querySelector('.triangle-shape-area-element');
     shapeAreaElement.innerText = area;
 });
 
 // Event delegation for the 'Convert to m2' buttons
 document.getElementById('area-calculation-section').addEventListener('click', function(event){
-    if(event.target.classList.contains('btn-convert-area')){
+    if(event.target.classList.contains('btn-convert-triangle-area')){
         const listItem = event.target.closest('li');
-        const shapeAreaElementValue = listItem.querySelector('.shape-area-element').innerText;
+        const shapeAreaElementValue = listItem.querySelector('.triangle-shape-area-element').innerText;
         const areaInMeterSquare = shapeAreaElementValue / 10000;
-        listItem.querySelector('.shape-area-element').innerText = areaInMeterSquare;
+        listItem.querySelector('.triangle-shape-area-element').innerText = areaInMeterSquare;
+        listItem.querySelector('.triangle-shape-area-unit').innerText = 'm';
     }
 });
 
