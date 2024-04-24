@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>Welcome to my blogs!</h1>
+    <header>
+        <section class="mx-auto px-4 lg:px-24 py-4 lg:py-12">
+            <h1 class="text-5xl font-bold text-center text-blue-500">Welcome to Blogs Page</h1>
+        </section>
+    </header>
+    <!-- Question and Answers -->
+    <main>
+        <section class="mx-auto px-4 lg:px-24 py-4 lg:py-12">
+            <div class="mb-8">
+                <h2 class="text-3xl font-semibold">1. What Is DOM And What Is The Purpose Of DOM?</h2>
+                <P class="mt-5 ms-8 font-semibold">
+                    DOM is a short form of Document Object Model. It is a programming interface web documents. When a web browser loads a webpage it becomes a DOM to manipulate the content, structure and style of the webpage by programming languages like JavaScript. In the DOM each element of the HTML language become node in the tree. <br>
+                    
+                    The purpose of the DOM is that it provides a way for scripts to dynamically access and update the content, structure, and style of a document. This capability is what makes modern, interactive web pages possible. 
+                </P>
+            </div>
+            <div class="mb-8">
+                <h2 class="text-3xl font-semibold">2. What Is DOM And What Is The Purpose Of DOM?</h2>
+                <P class="mt-5 ms-8 font-semibold">
+                    I can select HTML elements by using DOM in JS through various methods. The methods are: <br>
+                    1. getElementById(); <br>
+                    2. getElementsByClassName() <br>
+                    3. getElementsByTagName() <br>
+                    4. querySelector() <br>
+                    5. querySelectorAll() <br>
+                    6. getElementsByName() <br>
+                </P>
+            </div>
+            <div class="mb-8">
+                <h2 class="text-3xl font-semibold">3. What Is Event Bubble?</h2>
+                <P class="mt-5 ms-8 font-semibold">
+                    When events propagate upward in the DOM tree to the parents and ancestors of elements that receive them. This is known as "Event Bubbling," and it gives parent elements the ability to manage events that happen on their child components.
+                </P>
+            </div>
+            <div class="mb-8">
+                <h2 class="text-3xl font-semibold">4. What Is A Callback Function And Why Will You Use It?</h2>
+                <P class="mt-5 ms-8 font-semibold">
+                    A callback function is one that is called after another function has finished running or an event has occurred, and it is called as an argument to that other function. <br>
+                    I will use callback function when I have to manage asynchronous events or network requests. Because they serve as a way to ensure that specific code won't execute until a particular task has been finished.
+                </P>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
